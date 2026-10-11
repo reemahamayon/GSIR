@@ -10,6 +10,7 @@ import ArticleDetail from './pages/ArticleDetail'
 import WriteArticle from './pages/WriteArticle'
 import SavedArticles from './pages/SavedArticles'
 import Chatbot from './pages/Chatbot'
+import Forum from './pages/Forum'
 
 function App() {
   return (
@@ -43,6 +44,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Chatbot />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/forum"
+            element={
+              <ProtectedRoute>
+                <Forum />
               </ProtectedRoute>
             }
           />

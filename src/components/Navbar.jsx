@@ -25,6 +25,7 @@ function Navbar() {
 
         {user ? (
           <>
+            <Link to="/forum" className={linkClass}>Forum</Link>
             <Link to="/chatbot" className={linkClass}>Ask AI</Link>
             <Link to="/write" className={linkClass}>Write</Link>
             <Link to="/saved" className={linkClass}>Saved</Link>
